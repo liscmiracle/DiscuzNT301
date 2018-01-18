@@ -256,7 +256,8 @@ namespace Discuz.Web
 
             postusername = Utils.StrIsNullOrEmpty(postusername) ? DNTRequest.GetString("username") : postusername;
             string section = DNTRequest.GetString("diseaseSection");
-            postusername = section + "_" + postusername;
+            if (!string.IsNullOrEmpty(section) && postusername != "admin")
+                postusername = section + "_" + postusername;
             int uid = -1;
             switch (config.Passwordmode)
             {

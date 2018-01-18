@@ -21,6 +21,11 @@
 				<label for="password">密　码　：</label>
 				<input type="password" name="password" size="25" tabindex="3" class="txt"/>
 			</div>
+            <div class="sipt lpsw">
+                <label for="diseaseSection">版  块　：</label>
+                <label><input name="diseaseSection" type="radio" value="f" />血液透析</label>
+                <label><input name="diseaseSection" type="radio" value="f" />腹膜透析</label>
+            </div>
         <%if {isLoginCode}%>
 			<div class="lpsw" style="position: relative;margin-bottom:10px;">
 				<%template _vcode%>

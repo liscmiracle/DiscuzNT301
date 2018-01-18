@@ -674,7 +674,7 @@ override protected void OnInit(EventArgs e)
 	{
 
 	templateBuilder.Append("\r\n				<div class=\"sipt lpsw\">\r\n					<label for=\"password3\">密　码　：</label>\r\n					<input type=\"password\" tabindex=\"2\" class=\"txt\" size=\"36\" name=\"password\" id=\"password3\"/>\r\n				</div>\r\n			");
-    templateBuilder.Append("\r\n				<div class=\"ftid sltp\" style=\"margin-bottom:10px\">\r\n					<label><input name=\"diseaseSection\" type=\"radio\" value=\"x\" />血透 </label><label><input name=\"diseaseSection\" type=\"radio\" value=\"f\" />腹透 </label>\r\n				</div>\r\n			");
+    templateBuilder.Append("\r\n				<div class=\"ftid sltp\" style=\"margin-bottom:10px\">\r\n					<label><input name=\"diseaseSection\" type=\"radio\" checked value=\"x\" />血液透析</label><label><input name=\"diseaseSection\" type=\"radio\" value=\"f\" />腹膜透析</label>\r\n				</div>\r\n			");
 	}	//end if
 
 
