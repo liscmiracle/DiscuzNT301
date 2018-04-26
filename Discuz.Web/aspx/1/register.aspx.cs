@@ -125,6 +125,9 @@ namespace Discuz.Web
                 }
 
                 string tmpUserName = DNTRequest.GetString(config.Antispamregisterusername);
+                string section = DNTRequest.GetString("diseaseSection");
+                if (!string.IsNullOrEmpty(section))
+                    tmpUserName = section + "_" + tmpUserName;
                 string email = DNTRequest.GetString(config.Antispamregisteremail).Trim().ToLower();
                 string tmpBday = DNTRequest.GetString("bday").Trim();
 

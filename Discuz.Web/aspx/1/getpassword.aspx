@@ -592,6 +592,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\r\n	<div class=\"c cl\">\r\n		<div style=\"overflow:hidden;overflow-y:auto\" class=\"lgfm\">\r\n			<div class=\"sipt lpsw\">\r\n				<label for=\"username\">用户名　：</label>\r\n				<input type=\"text\" class=\"txt\" value=\"");
 	templateBuilder.Append(username.ToString());
 	templateBuilder.Append("\" maxlength=\"20\" size=\"25\" autocomplete=\"off\" name=\"username\" id=\"username\"/>\r\n			</div>\r\n			<div class=\"sipt lpsw\">\r\n				<label for=\"Email:\">Email　：</label>\r\n				<input name=\"email\" type=\"text\" id=\"email\" size=\"25\" class=\"txt\"/>\r\n			</div>\r\n		");
+    templateBuilder.Append("\r\n				<div class=\"ftid sltp\" style=\"margin-bottom:10px\">\r\n					<label><input name=\"diseaseSection\" type=\"radio\" checked value=\"x\" />血液透析</label><label><input name=\"diseaseSection\" type=\"radio\" value=\"f\" />腹膜透析</label>\r\n				</div>\r\n			");
 	if (isseccode)
 	{
 

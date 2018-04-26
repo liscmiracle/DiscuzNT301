@@ -612,6 +612,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\" id=\"username\" onkeyup=\"checkusername(this.value);\"/> *</label>\r\n				        <label><em>密码:</em><input type=\"password\" class=\"txt\" tabindex=\"1\"  id=\"password\" size=\"25\" name=\"password\" onblur=\"return checkpasswd(this);\"/> *</label>	\r\n				        <label id=\"passwdpower\" style=\"display: none;\"><em>密码强度</em><strong id=\"showmsg\"></strong></label>\r\n				        <label><em>确认密码:</em><input type=\"password\" class=\"txt\" value=\"\" tabindex=\"1\"  id=\"password2\" size=\"25\" name=\"password2\" onblur=\"checkdoublepassword(this.form)\"/> *</label>\r\n				        <label><em>Email:</em><input type=\"text\" class=\"txt\" tabindex=\"1\"  id=\"email\" size=\"25\" autocomplete=\"off\" name=\"");
 	templateBuilder.Append(config.Antispamregisteremail.ToString().Trim());
 	templateBuilder.Append("\" onblur=\"checkemail(this.value)\"/> *</label>\r\n				        ");
+    templateBuilder.Append("\r\n				<div class=\"ftid sltp\" style=\"margin-bottom:10px\">\r\n					<label><input name=\"diseaseSection\" type=\"radio\" checked value=\"x\" />血液透析</label><label><input name=\"diseaseSection\" type=\"radio\" value=\"f\" />腹膜透析</label>\r\n				</div>\r\n			");
 	if (config.Realnamesystem==1)
 	{
 

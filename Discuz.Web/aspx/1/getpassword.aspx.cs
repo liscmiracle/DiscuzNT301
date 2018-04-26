@@ -17,7 +17,9 @@ namespace Discuz.Web
         {
             pagetitle = "密码找回";
             username = Utils.RemoveHtml(DNTRequest.GetString("username"));
-
+            string section = DNTRequest.GetString("diseaseSection");
+            if (!string.IsNullOrEmpty(section) && username != "admin")
+                username = section + "_" + username;
             //如果提交...
             if (DNTRequest.IsPost())
             {
