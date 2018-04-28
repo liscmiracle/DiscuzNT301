@@ -71,7 +71,7 @@ namespace Discuz.Web
                     PrivateMessageInfo pm = PrivateMessages.GetPrivateMessageInfo(DNTRequest.GetQueryInt("pmid", -1));
                     if (pm != null && (pm.Msgtoid == userid || pm.Msgfromid == userid))
                     {
-                        msgto = action.CompareTo("re") == 0 ? Utils.HtmlEncode(pm.Msgfrom) : "";
+                        msgto = action.CompareTo("re") == 0 ? Users.GetUserInfo(pm.Msgfromid).Username : "";
                         subject = Utils.HtmlEncode(action) + ":" + pm.Subject;
                         message = Utils.HtmlEncode("> ") + pm.Message.Replace("\n", "\n> ") + "\r\n\r\n";
                     }
